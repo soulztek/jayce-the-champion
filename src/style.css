@@ -374,3 +374,37 @@ button:hover {
     transition: none !important;
   }
 }
+
+.clip-scope {
+  font-size: 12px;
+  color: #455c4e;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+.source-credit {
+  font-size: 10px;
+  color: #65756b;
+  line-height: 1.5;
+}
+.source-credit a,
+.external-example a {
+  color: #15683e;
+}
+.external-example {
+  display: grid;
+  gap: 4px;
+  border-top: 1px solid #e7ece8;
+  padding-top: 10px;
+}
+.external-example a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 650;
+}
+.external-example small {
+  font-size: 10px;
+  color: #65756b;
+  line-height: 1.5;
+}

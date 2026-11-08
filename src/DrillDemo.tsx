@@ -7,8 +7,25 @@ export function mediaFor(id: string): DrillMedia {
   if (!media) throw Error(`Missing drill demo: ${id}`);
   return media;
 }
+export const doubleCrossoverSource = {
+  url: "https://www.instagram.com/reel/DXDm3MgDchR/",
+  title: "How to Master the Double Cross 🎒😎",
+};
+export function assetFor(id: string) {
+  const media = mediaFor(id);
+  if (media.motion === "crossover")
+    return {
+      id: "crossover-real",
+      width: 480,
+      height: 270,
+      real: true,
+      alt: "Real person making a right-to-left crossover and driving away. No layup or pull-up finish is shown. Original BallerBootCamp.com and makeagif.com marks remain visible.",
+    };
+  return { id: media.id, width: 480, height: 360, real: false, alt: media.alt };
+}
 export default function DrillDemo({ id }: { id: string }) {
   const m = mediaFor(id);
+  const asset = assetFor(id);
   const [playing, setPlaying] = useState(false);
   useEffect(() => {
     const query = window.matchMedia?.("(prefers-reduced-motion: reduce)");
@@ -23,16 +40,27 @@ export default function DrillDemo({ id }: { id: string }) {
     <figure className="demo">
       <figcaption>
         <strong>
-          {m.title}
-          {m.side ? ` · ${m.side} side` : ""}
+          {asset.real ? "Crossover move demonstration" : m.title}
+          {!asset.real && m.side ? ` · ${m.side} side` : ""}
         </strong>
-        <span>Animated drill diagram · original illustration</span>
+        <span>
+          {asset.real
+            ? "Real-person clip · original framing and marks retained"
+            : "Animated drill diagram · original illustration"}
+        </span>
+        {asset.real && (
+          <p className="clip-scope">
+            Crossover move only (right to left); practice the layup/pull-up
+            separately. Practice both directions.
+          </p>
+        )}
       </figcaption>
       <img
-        src={`${import.meta.env.BASE_URL}demos/${m.id}.${playing ? "gif" : "png"}`}
-        width="480"
-        height="360"
-        alt={m.alt}
+        src={`${import.meta.env.BASE_URL}demos/${asset.id}.${playing ? "gif" : "png"}`}
+        width={asset.width}
+        height={asset.height}
+        style={{ aspectRatio: `${asset.width} / ${asset.height}` }}
+        alt={asset.alt}
         loading="lazy"
         decoding="async"
       />
@@ -43,13 +71,49 @@ export default function DrillDemo({ id }: { id: string }) {
         aria-label={`${playing ? "Pause" : "Play"} demo: ${m.title}${m.side ? ` ${m.side} side` : ""}`}
         onClick={() => setPlaying((v) => !v)}
       >
-        {playing ? "Pause diagram" : "Play diagram"}
+        {playing
+          ? asset.real
+            ? "Pause clip"
+            : "Pause diagram"
+          : asset.real
+            ? "Play clip"
+            : "Play diagram"}
       </button>
+      {asset.real && (
+        <p className="source-credit">
+          Source shown in your clip:{" "}
+          <a
+            href="https://www.ballerbootcamp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BallerBootCamp.com
+          </a>{" "}
+          · makeagif.com. No mirroring or watermark removal.
+        </p>
+      )}
       <ul className="tips">
         {m.tips.map((tip) => (
           <li key={tip}>{tip}</li>
         ))}
       </ul>
+      {m.motion === "double-crossover" && (
+        <div className="external-example">
+          <a
+            href={doubleCrossoverSource.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            referrerPolicy="no-referrer"
+          >
+            Watch double-crossover example ↗
+          </a>
+          <small>
+            Your linked example: “{doubleCrossoverSource.title}”. Opens
+            Instagram; login may be required. External example, not an inline
+            video or a verified layup/pull-up finish.
+          </small>
+        </div>
+      )}
     </figure>
   );
 }

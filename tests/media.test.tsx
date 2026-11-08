@@ -1,6 +1,11 @@
 import { it, expect, vi } from "vitest";
 import { render, screen, fireEvent, act } from "@testing-library/react";
-import DrillDemo, { drillMedia, mediaFor } from "../src/DrillDemo";
+import DrillDemo, {
+  drillMedia,
+  mediaFor,
+  assetFor,
+  doubleCrossoverSource,
+} from "../src/DrillDemo";
 it("maps each warm-up and shooting drill, and all six move endings on BOTH sides", () => {
   expect(drillMedia).toHaveLength(18);
   expect(new Set(drillMedia.map((x) => x.id)).size).toBe(18);
@@ -46,7 +51,7 @@ it("starts with a lazy static poster, plays real GIF, and pauses back to poster"
   expect(image).toHaveAttribute("loading", "lazy");
   expect(image).toHaveAttribute(
     "src",
-    expect.stringContaining("crossover-layup-right.png"),
+    expect.stringContaining("crossover-real.png"),
   );
   fireEvent.click(
     screen.getByRole("button", {
@@ -55,7 +60,7 @@ it("starts with a lazy static poster, plays real GIF, and pauses back to poster"
   );
   expect(image).toHaveAttribute(
     "src",
-    expect.stringContaining("crossover-layup-right.gif"),
+    expect.stringContaining("crossover-real.gif"),
   );
   expect(screen.getByRole("button", { name: /Pause demo/ })).toHaveAttribute(
     "aria-pressed",
@@ -96,4 +101,47 @@ it("never autoplays for reduced motion and pauses if preference changes", () => 
 });
 it("rejects unmapped drills rather than silently displaying a generic diagram", () => {
   expect(() => mediaFor("unknown")).toThrow(/Missing drill/);
+});
+
+it("uses the one approved real right-to-left crossover clip across crossover cards without claiming finishes", () => {
+  for (const end of ["layup", "pullup"])
+    for (const side of ["left", "right"]) {
+      const a = assetFor(`crossover-${end}-${side}`);
+      expect(a.id).toBe("crossover-real");
+      expect(a.real).toBe(true);
+      expect(a.height).toBe(270);
+    }
+  expect(assetFor("double-crossover-layup-right").real).toBe(false);
+  expect(assetFor("in-and-out-pullup-left").real).toBe(false);
+  render(<DrillDemo id="crossover-pullup-left" />);
+  expect(screen.getByText("Crossover move demonstration")).toBeVisible();
+  expect(
+    screen.getByText(/Crossover move only \(right to left\)/),
+  ).toBeVisible();
+  expect(screen.getByRole("img")).toHaveAttribute("height", "270");
+  expect(screen.getByRole("img")).toHaveAttribute(
+    "alt",
+    expect.stringContaining("No layup or pull-up finish"),
+  );
+  expect(
+    screen.getByRole("link", { name: "BallerBootCamp.com" }),
+  ).toHaveAttribute("rel", "noopener noreferrer");
+});
+it("links the user's actual double-crossover reel without an embedded player or fake video URL", () => {
+  render(<DrillDemo id="double-crossover-layup-left" />);
+  const a = screen.getByRole("link", {
+    name: "Watch double-crossover example ↗",
+  });
+  expect(a).toHaveAttribute(
+    "href",
+    "https://www.instagram.com/reel/DXDm3MgDchR/",
+  );
+  expect(a).toHaveAttribute("rel", "noopener noreferrer");
+  expect(a).toHaveAttribute("referrerpolicy", "no-referrer");
+  expect(doubleCrossoverSource.title).toContain("Double Cross");
+  expect(screen.getByText(/Opens Instagram/)).toBeVisible();
+  expect(document.querySelector("iframe")).toBeNull();
+  expect(screen.getByRole("img").getAttribute("src")).not.toContain(
+    "instagram",
+  );
 });

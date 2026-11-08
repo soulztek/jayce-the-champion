@@ -15,9 +15,21 @@ Checks are saved only on this device/browser. They reset for a new local calenda
 
 Storage key: `jayce-champion-checklist-v1`. One-time migration reads the previous local app’s `jayce-champion-v1` only if its session date is today: old counters ≥5 become checked; all five warm-up movements must have been completed. Old storage is left intact. Corrupt checklist storage is left untouched and a warning is shown; confirmed clearing can recover a fresh checklist.
 
+## User-selected real-person crossover
+
+Crossover cards now share the user's supplied real-person clip: the first **0–3 seconds**, right-to-left crossover into a drive, at native **480×270**. The 3-second GIF has 45 frames (15 fps), a static poster, and unchanged full framing: BallerBootCamp.com, makeagif.com, and shirt marks remain. No crop, mirroring, watermark removal, or synthesized motion. The private upload stays outside the repo; only the selected derivatives are published.
+
+The caption explicitly says **“Crossover move only (right to left); practice the layup/pull-up separately. Practice both directions.”** The same move example supports all crossover practice cards; it does not falsely depict both directions or either finish. Source credit is visible beside the demonstration. The supplied source was reviewed separately by the parent's video reviewer; this executor inspected only metadata/static frames.
+
+To recreate from the approved source kept outside the repository: `python3 scripts/convert-real-crossover.py /path/to/approved-source.mp4` (ffmpeg, ffprobe, Pillow required). `scripts/real-crossover-validation.json` records the derived media checks.
+
+## User-linked double-crossover example
+
+Double-crossover demo sections include a normal outbound link to the user's selected Instagram reel, **“How to Master the Double Cross 🎒😎”**: https://www.instagram.com/reel/DXDm3MgDchR/. This exact source URL was recovered from the public Google share redirect's `imgrefurl` and its public title checked. No video was downloaded, embedded, or represented as watched/technique-verified. It may require an Instagram login. Links use noopener/noreferrer and no-referrer; no Instagram assets or trackers load inside this app.
+
 ## Original animated demonstrations
 
-**18 GIFs and 18 static posters**: five warm-up movements, one form shot, and six move/ending combinations with separate right/left versions. The diagrams are original programmatic stick-figure/court illustrations, not filmed coaching footage. Every file is 480×360, loops for 4.8 seconds, and includes three phase labels. Identical consecutive frames are coalesced; the source is sampled at 12.5 fps. Labels explain attack side, starting hand, the ball-hand path, and the finish.
+**18 retained diagram GIFs and 18 static posters** (crossover diagrams are superseded in the UI by the real clip): five warm-up movements, one form shot, and six move/ending combinations with separate right/left versions. The diagrams are original programmatic stick-figure/court illustrations, not filmed coaching footage. Every file is 480×360, loops for 4.8 seconds, and includes three phase labels. Identical consecutive frames are coalesced; the source is sampled at 12.5 fps. Labels explain attack side, starting hand, the ball-hand path, and the finish.
 
 Each “Show demo & tips” section is collapsed initially. Images use static PNG posters and lazy loading. Animation starts only after **Play diagram** and **Pause diagram** restores the poster. Nothing autoplays, including when reduced motion is requested. Switching the OS to reduced motion pauses an already playing diagram; explicit play remains available.
 

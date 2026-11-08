@@ -1,0 +1,18 @@
+{
+  "width": 480,
+  "height": 270,
+  "frames": 45,
+  "distinctFrames": 45,
+  "durationMs": 3000,
+  "loop": 0,
+  "bytes": 862581,
+  "excerptSeconds": [
+    0,
+    3
+  ],
+  "originalDurationSeconds": 4.16,
+  "originalFps": 25,
+  "sampledFps": 15,
+  "framing": "Full native framing, no crop, no mirror, original visible marks retained",
+  "review": "Parent watchVideo review: right-to-left crossover then explosive drive; no layup/pull-up finish."
+}
