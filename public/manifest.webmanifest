@@ -1,0 +1,32 @@
+{
+  "id": "/jayce-the-champion/",
+  "name": "Jayce The Champion",
+  "short_name": "Jayce The Champion",
+  "description": "Simple on-device basketball practice. Progress, not pressure.",
+  "start_url": "/jayce-the-champion/",
+  "scope": "/jayce-the-champion/",
+  "display": "standalone",
+  "background_color": "#f4f6f5",
+  "theme_color": "#f4f6f5",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

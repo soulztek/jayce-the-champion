@@ -1,0 +1,291 @@
+[
+  {
+    "id": "warmup-march",
+    "title": "March or light jog",
+    "kind": "warmup",
+    "motion": "march",
+    "side": null,
+    "startHand": null,
+    "phases": ["Easy start", "Gentle movement", "Keep it comfortable"],
+    "tips": [
+      "March easily; lift one knee, then the other.",
+      "Keep it gentle and give yourself space."
+    ],
+    "alt": "Animated diagram of march or light jog at an easy pace."
+  },
+  {
+    "id": "warmup-lateral",
+    "title": "Lateral steps",
+    "kind": "warmup",
+    "motion": "lateral",
+    "side": null,
+    "startHand": null,
+    "phases": ["Easy start", "Gentle movement", "Keep it comfortable"],
+    "tips": [
+      "Stay comfortably low and step side to side.",
+      "Keep feet apart; move at an easy pace."
+    ],
+    "alt": "Animated diagram of lateral steps at an easy pace."
+  },
+  {
+    "id": "warmup-ankle",
+    "title": "Ankle rocks",
+    "kind": "warmup",
+    "motion": "ankle",
+    "side": null,
+    "startHand": null,
+    "phases": ["Easy start", "Gentle movement", "Keep it comfortable"],
+    "tips": [
+      "Keep the heel down and gently rock the knee forward.",
+      "Use a small, comfortable range; never force it."
+    ],
+    "alt": "Animated diagram of ankle rocks at an easy pace."
+  },
+  {
+    "id": "warmup-squat",
+    "title": "Gentle squats",
+    "kind": "warmup",
+    "motion": "squat",
+    "side": null,
+    "startHand": null,
+    "phases": ["Easy start", "Gentle movement", "Keep it comfortable"],
+    "tips": [
+      "Bend hips and knees a little, then stand tall.",
+      "Keep feet planted and use a comfortable depth."
+    ],
+    "alt": "Animated diagram of gentle squats at an easy pace."
+  },
+  {
+    "id": "warmup-dribble",
+    "title": "Easy dribble",
+    "kind": "warmup",
+    "motion": "dribble",
+    "side": null,
+    "startHand": null,
+    "phases": ["Easy start", "Gentle movement", "Keep it comfortable"],
+    "tips": [
+      "Use light fingertip control; keep the ball nearby.",
+      "Practice each hand slowly, with eyes up when comfortable."
+    ],
+    "alt": "Animated diagram of easy dribble at an easy pace."
+  },
+  {
+    "id": "form-shot",
+    "title": "Form shooting",
+    "kind": "form",
+    "motion": "shot",
+    "side": null,
+    "startHand": null,
+    "phases": ["Balance & set", "Smooth release", "Hold follow-through"],
+    "tips": [
+      "Start close with balanced feet and the elbow comfortably under the ball.",
+      "Keep the guide hand light and quiet.",
+      "Release smoothly and hold your follow-through; stay closer if needed."
+    ],
+    "alt": "Side-view shooting diagram: set the ball with a light guide hand, release smoothly, then hold the follow-through."
+  },
+  {
+    "id": "crossover-layup-right",
+    "title": "Crossover \u2192 layup",
+    "kind": "layup",
+    "motion": "crossover",
+    "side": "right",
+    "startHand": "left",
+    "handPath": "L \u2192 R",
+    "finish": "Finish RIGHT \u00b7 off LEFT foot",
+    "phases": ["Stay low & change", "Push off & go", "Soft layup"],
+    "tips": [
+      "Bend hips and knees into a low, stable stance; keep eyes up.",
+      "Use a quick, low bounce below the knees, then plant and push into the open lane.",
+      "Finish with the right hand off the left foot; use a soft touch high on the square."
+    ],
+    "alt": "Back-view diagram of a right-side crossover into a layup. Start left hand; ball path L \u2192 R. Finish RIGHT \u00b7 off LEFT foot."
+  },
+  {
+    "id": "crossover-layup-left",
+    "title": "Crossover \u2192 layup",
+    "kind": "layup",
+    "motion": "crossover",
+    "side": "left",
+    "startHand": "right",
+    "handPath": "R \u2192 L",
+    "finish": "Finish LEFT \u00b7 off RIGHT foot",
+    "phases": ["Stay low & change", "Push off & go", "Soft layup"],
+    "tips": [
+      "Bend hips and knees into a low, stable stance; keep eyes up.",
+      "Use a quick, low bounce below the knees, then plant and push into the open lane.",
+      "Finish with the left hand off the right foot; use a soft touch high on the square."
+    ],
+    "alt": "Back-view diagram of a left-side crossover into a layup. Start right hand; ball path R \u2192 L. Finish LEFT \u00b7 off RIGHT foot."
+  },
+  {
+    "id": "double-crossover-layup-right",
+    "title": "Double crossover \u2192 layup",
+    "kind": "layup",
+    "motion": "double-crossover",
+    "side": "right",
+    "startHand": "right",
+    "handPath": "R \u2192 L \u2192 R",
+    "finish": "Finish RIGHT \u00b7 off LEFT foot",
+    "phases": ["Stay low & change", "Push off & go", "Soft layup"],
+    "tips": [
+      "Sell the first change; stay low for a quick second crossover.",
+      "After the ball comes back, push off and accelerate into the open lane.",
+      "Finish with the right hand off the left foot; use a soft touch high on the square."
+    ],
+    "alt": "Back-view diagram of a right-side double crossover into a layup. Start right hand; ball path R \u2192 L \u2192 R. Finish RIGHT \u00b7 off LEFT foot."
+  },
+  {
+    "id": "double-crossover-layup-left",
+    "title": "Double crossover \u2192 layup",
+    "kind": "layup",
+    "motion": "double-crossover",
+    "side": "left",
+    "startHand": "left",
+    "handPath": "L \u2192 R \u2192 L",
+    "finish": "Finish LEFT \u00b7 off RIGHT foot",
+    "phases": ["Stay low & change", "Push off & go", "Soft layup"],
+    "tips": [
+      "Sell the first change; stay low for a quick second crossover.",
+      "After the ball comes back, push off and accelerate into the open lane.",
+      "Finish with the left hand off the right foot; use a soft touch high on the square."
+    ],
+    "alt": "Back-view diagram of a left-side double crossover into a layup. Start left hand; ball path L \u2192 R \u2192 L. Finish LEFT \u00b7 off RIGHT foot."
+  },
+  {
+    "id": "in-and-out-layup-right",
+    "title": "In-and-out \u2192 layup",
+    "kind": "layup",
+    "motion": "in-and-out",
+    "side": "right",
+    "startHand": "right",
+    "handPath": "R \u2192 inward \u2192 R",
+    "finish": "Finish RIGHT \u00b7 off LEFT foot",
+    "phases": ["Same-hand fake", "Push off & go", "Soft layup"],
+    "tips": [
+      "Fake inward, then bring it out in the SAME hand; no carrying or palming.",
+      "Sell the fake with your shoulder and eyes, then push off into the open lane.",
+      "Finish with the right hand off the left foot; use a soft touch high on the square."
+    ],
+    "alt": "Back-view diagram of a right-side in-and-out into a layup. Start right hand; ball path R \u2192 inward \u2192 R. Finish RIGHT \u00b7 off LEFT foot."
+  },
+  {
+    "id": "in-and-out-layup-left",
+    "title": "In-and-out \u2192 layup",
+    "kind": "layup",
+    "motion": "in-and-out",
+    "side": "left",
+    "startHand": "left",
+    "handPath": "L \u2192 inward \u2192 L",
+    "finish": "Finish LEFT \u00b7 off RIGHT foot",
+    "phases": ["Same-hand fake", "Push off & go", "Soft layup"],
+    "tips": [
+      "Fake inward, then bring it out in the SAME hand; no carrying or palming.",
+      "Sell the fake with your shoulder and eyes, then push off into the open lane.",
+      "Finish with the left hand off the right foot; use a soft touch high on the square."
+    ],
+    "alt": "Back-view diagram of a left-side in-and-out into a layup. Start left hand; ball path L \u2192 inward \u2192 L. Finish LEFT \u00b7 off RIGHT foot."
+  },
+  {
+    "id": "crossover-pullup-right",
+    "title": "Crossover \u2192 pull-up",
+    "kind": "pullup",
+    "motion": "crossover",
+    "side": "right",
+    "startHand": "left",
+    "handPath": "L \u2192 R",
+    "finish": "Balanced stop \u00b7 usual shooting form",
+    "phases": ["Stay low & change", "Push off & go", "Stop & shoot"],
+    "tips": [
+      "Bend hips and knees into a low, stable stance; keep eyes up.",
+      "Use a quick, low bounce below the knees, then plant and push into the open lane.",
+      "Create space, gather with both hands, stop balanced, and rise straight with your normal shooting and guide hand."
+    ],
+    "alt": "Back-view diagram of a right-side crossover into a balanced pull-up jumper. Start left hand; ball path L \u2192 R. Balanced stop \u00b7 usual shooting form."
+  },
+  {
+    "id": "crossover-pullup-left",
+    "title": "Crossover \u2192 pull-up",
+    "kind": "pullup",
+    "motion": "crossover",
+    "side": "left",
+    "startHand": "right",
+    "handPath": "R \u2192 L",
+    "finish": "Balanced stop \u00b7 usual shooting form",
+    "phases": ["Stay low & change", "Push off & go", "Stop & shoot"],
+    "tips": [
+      "Bend hips and knees into a low, stable stance; keep eyes up.",
+      "Use a quick, low bounce below the knees, then plant and push into the open lane.",
+      "Create space, gather with both hands, stop balanced, and rise straight with your normal shooting and guide hand."
+    ],
+    "alt": "Back-view diagram of a left-side crossover into a balanced pull-up jumper. Start right hand; ball path R \u2192 L. Balanced stop \u00b7 usual shooting form."
+  },
+  {
+    "id": "double-crossover-pullup-right",
+    "title": "Double crossover \u2192 pull-up",
+    "kind": "pullup",
+    "motion": "double-crossover",
+    "side": "right",
+    "startHand": "right",
+    "handPath": "R \u2192 L \u2192 R",
+    "finish": "Balanced stop \u00b7 usual shooting form",
+    "phases": ["Stay low & change", "Push off & go", "Stop & shoot"],
+    "tips": [
+      "Sell the first change; stay low for a quick second crossover.",
+      "After the ball comes back, push off and accelerate into the open lane.",
+      "Create space, gather with both hands, stop balanced, and rise straight with your normal shooting and guide hand."
+    ],
+    "alt": "Back-view diagram of a right-side double crossover into a balanced pull-up jumper. Start right hand; ball path R \u2192 L \u2192 R. Balanced stop \u00b7 usual shooting form."
+  },
+  {
+    "id": "double-crossover-pullup-left",
+    "title": "Double crossover \u2192 pull-up",
+    "kind": "pullup",
+    "motion": "double-crossover",
+    "side": "left",
+    "startHand": "left",
+    "handPath": "L \u2192 R \u2192 L",
+    "finish": "Balanced stop \u00b7 usual shooting form",
+    "phases": ["Stay low & change", "Push off & go", "Stop & shoot"],
+    "tips": [
+      "Sell the first change; stay low for a quick second crossover.",
+      "After the ball comes back, push off and accelerate into the open lane.",
+      "Create space, gather with both hands, stop balanced, and rise straight with your normal shooting and guide hand."
+    ],
+    "alt": "Back-view diagram of a left-side double crossover into a balanced pull-up jumper. Start left hand; ball path L \u2192 R \u2192 L. Balanced stop \u00b7 usual shooting form."
+  },
+  {
+    "id": "in-and-out-pullup-right",
+    "title": "In-and-out \u2192 pull-up",
+    "kind": "pullup",
+    "motion": "in-and-out",
+    "side": "right",
+    "startHand": "right",
+    "handPath": "R \u2192 inward \u2192 R",
+    "finish": "Balanced stop \u00b7 usual shooting form",
+    "phases": ["Same-hand fake", "Push off & go", "Stop & shoot"],
+    "tips": [
+      "Fake inward, then bring it out in the SAME hand; no carrying or palming.",
+      "Sell the fake with your shoulder and eyes, then push off into the open lane.",
+      "Create space, gather with both hands, stop balanced, and rise straight with your normal shooting and guide hand."
+    ],
+    "alt": "Back-view diagram of a right-side in-and-out into a balanced pull-up jumper. Start right hand; ball path R \u2192 inward \u2192 R. Balanced stop \u00b7 usual shooting form."
+  },
+  {
+    "id": "in-and-out-pullup-left",
+    "title": "In-and-out \u2192 pull-up",
+    "kind": "pullup",
+    "motion": "in-and-out",
+    "side": "left",
+    "startHand": "left",
+    "handPath": "L \u2192 inward \u2192 L",
+    "finish": "Balanced stop \u00b7 usual shooting form",
+    "phases": ["Same-hand fake", "Push off & go", "Stop & shoot"],
+    "tips": [
+      "Fake inward, then bring it out in the SAME hand; no carrying or palming.",
+      "Sell the fake with your shoulder and eyes, then push off into the open lane.",
+      "Create space, gather with both hands, stop balanced, and rise straight with your normal shooting and guide hand."
+    ],
+    "alt": "Back-view diagram of a left-side in-and-out into a balanced pull-up jumper. Start left hand; ball path L \u2192 inward \u2192 L. Balanced stop \u00b7 usual shooting form."
+  }
+]

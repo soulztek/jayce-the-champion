@@ -1,0 +1,182 @@
+[
+  {
+    "id": "warmup-march",
+    "frames": 54,
+    "distinctFrames": 54,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 344002,
+    "loop": 0
+  },
+  {
+    "id": "warmup-lateral",
+    "frames": 60,
+    "distinctFrames": 60,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 368501,
+    "loop": 0
+  },
+  {
+    "id": "warmup-ankle",
+    "frames": 48,
+    "distinctFrames": 39,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 287272,
+    "loop": 0
+  },
+  {
+    "id": "warmup-squat",
+    "frames": 51,
+    "distinctFrames": 43,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 314882,
+    "loop": 0
+  },
+  {
+    "id": "warmup-dribble",
+    "frames": 59,
+    "distinctFrames": 50,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 372051,
+    "loop": 0
+  },
+  {
+    "id": "form-shot",
+    "frames": 54,
+    "distinctFrames": 54,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 415532,
+    "loop": 0
+  },
+  {
+    "id": "crossover-layup-right",
+    "frames": 58,
+    "distinctFrames": 58,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 492570,
+    "loop": 0
+  },
+  {
+    "id": "crossover-layup-left",
+    "frames": 58,
+    "distinctFrames": 58,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 492710,
+    "loop": 0
+  },
+  {
+    "id": "double-crossover-layup-right",
+    "frames": 58,
+    "distinctFrames": 56,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 514993,
+    "loop": 0
+  },
+  {
+    "id": "double-crossover-layup-left",
+    "frames": 58,
+    "distinctFrames": 56,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 511102,
+    "loop": 0
+  },
+  {
+    "id": "in-and-out-layup-right",
+    "frames": 58,
+    "distinctFrames": 54,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 495831,
+    "loop": 0
+  },
+  {
+    "id": "in-and-out-layup-left",
+    "frames": 58,
+    "distinctFrames": 54,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 490019,
+    "loop": 0
+  },
+  {
+    "id": "crossover-pullup-right",
+    "frames": 58,
+    "distinctFrames": 58,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 509936,
+    "loop": 0
+  },
+  {
+    "id": "crossover-pullup-left",
+    "frames": 58,
+    "distinctFrames": 58,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 509860,
+    "loop": 0
+  },
+  {
+    "id": "double-crossover-pullup-right",
+    "frames": 58,
+    "distinctFrames": 56,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 529998,
+    "loop": 0
+  },
+  {
+    "id": "double-crossover-pullup-left",
+    "frames": 58,
+    "distinctFrames": 56,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 525170,
+    "loop": 0
+  },
+  {
+    "id": "in-and-out-pullup-right",
+    "frames": 58,
+    "distinctFrames": 54,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 512189,
+    "loop": 0
+  },
+  {
+    "id": "in-and-out-pullup-left",
+    "frames": 58,
+    "distinctFrames": 54,
+    "durationMs": 4800,
+    "width": 480,
+    "height": 360,
+    "bytes": 506303,
+    "loop": 0
+  }
+]
