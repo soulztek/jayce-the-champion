@@ -5,6 +5,7 @@ import DrillDemo, {
   mediaFor,
   assetFor,
   doubleCrossoverSource,
+  moveSources,
 } from "../src/DrillDemo";
 it("maps each warm-up and shooting drill, and all six move endings on BOTH sides", () => {
   expect(drillMedia).toHaveLength(18);
@@ -145,3 +146,31 @@ it("links the user's actual double-crossover reel without an embedded player or 
     "instagram",
   );
 });
+
+it.each([
+  [
+    "crossover",
+    "Watch crossover video",
+    "https://www.instagram.com/reel/DfXl-WPxtbo/",
+  ],
+  [
+    "in-and-out",
+    "Watch in-and-out video",
+    "https://www.instagram.com/reel/DffZtFzRdxu/",
+  ],
+])(
+  "adds the user's %s source link without tracking parameters or remote embeds",
+  (move, label, url) => {
+    render(<DrillDemo id={`${move}-pullup-right`} />);
+    const link = screen.getByRole("link", { name: label });
+    expect(link).toHaveAttribute("href", url);
+    expect(link).toHaveAttribute("target", "_blank");
+    expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    expect(link).toHaveAttribute("referrerpolicy", "no-referrer");
+    expect(new URL(moveSources[move].url).search).toBe("");
+    expect(
+      screen.getByText(/needs internet and may require login/),
+    ).toBeVisible();
+    expect(document.querySelector("iframe")).toBeNull();
+  },
+);

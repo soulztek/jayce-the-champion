@@ -25,7 +25,7 @@ To recreate from the approved source kept outside the repository: `python3 scrip
 
 ## User-linked double-crossover example
 
-Double-crossover demo sections include a normal outbound link to the user's selected Instagram reel, **“How to Master the Double Cross 🎒😎”**: https://www.instagram.com/reel/DXDm3MgDchR/. This exact source URL was recovered from the public Google share redirect's `imgrefurl` and its public title checked. No video was downloaded, embedded, or represented as watched/technique-verified. It may require an Instagram login. Links use noopener/noreferrer and no-referrer; no Instagram assets or trackers load inside this app.
+Double-crossover demo sections include a normal outbound link to the user's selected Instagram reel, **“How to Master the Double Cross 🎒😎”**: https://www.instagram.com/reel/DXDm3MgDchR/. This exact source URL was recovered from the public Google share redirect's `imgrefurl` and its public title checked. No video was downloaded, embedded, or represented as watched/technique-verified. The user also supplied crossover https://www.instagram.com/reel/DfXl-WPxtbo/ and in-and-out https://www.instagram.com/reel/DffZtFzRdxu/ source links; these appear only in their matching move’s collapsed demo sections. Their tracking query parameters are omitted while preserving the exact reel identity. The uploaded crossover GIF remains available alongside its source link. All three links need internet, may require login, and do not imply that a layup or pull-up finish is shown or independently verified. It may require an Instagram login. Links use noopener/noreferrer and no-referrer; no Instagram assets or trackers load inside this app.
 
 ## Original animated demonstrations
 

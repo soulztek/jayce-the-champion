@@ -7,10 +7,27 @@ export function mediaFor(id: string): DrillMedia {
   if (!media) throw Error(`Missing drill demo: ${id}`);
   return media;
 }
-export const doubleCrossoverSource = {
-  url: "https://www.instagram.com/reel/DXDm3MgDchR/",
-  title: "How to Master the Double Cross 🎒😎",
+export const moveSources: Record<
+  string,
+  { url: string; title: string; label: string }
+> = {
+  crossover: {
+    url: "https://www.instagram.com/reel/DfXl-WPxtbo/",
+    title: "Crossover example",
+    label: "Watch crossover video",
+  },
+  "double-crossover": {
+    url: "https://www.instagram.com/reel/DXDm3MgDchR/",
+    title: "How to Master the Double Cross 🎒😎",
+    label: "Watch double-crossover example ↗",
+  },
+  "in-and-out": {
+    url: "https://www.instagram.com/reel/DffZtFzRdxu/",
+    title: "In-and-out example",
+    label: "Watch in-and-out video",
+  },
 };
+export const doubleCrossoverSource = moveSources["double-crossover"];
 export function assetFor(id: string) {
   const media = mediaFor(id);
   if (media.motion === "crossover")
@@ -26,6 +43,7 @@ export function assetFor(id: string) {
 export default function DrillDemo({ id }: { id: string }) {
   const m = mediaFor(id);
   const asset = assetFor(id);
+  const source = moveSources[m.motion];
   const [playing, setPlaying] = useState(false);
   useEffect(() => {
     const query = window.matchMedia?.("(prefers-reduced-motion: reduce)");
@@ -97,19 +115,19 @@ export default function DrillDemo({ id }: { id: string }) {
           <li key={tip}>{tip}</li>
         ))}
       </ul>
-      {m.motion === "double-crossover" && (
+      {source && (
         <div className="external-example">
           <a
-            href={doubleCrossoverSource.url}
+            href={source.url}
             target="_blank"
             rel="noopener noreferrer"
             referrerPolicy="no-referrer"
           >
-            Watch double-crossover example ↗
+            {source.label}
           </a>
           <small>
-            Your linked example: “{doubleCrossoverSource.title}”. Opens
-            Instagram; login may be required. External example, not an inline
+            Your linked example: “{source.title}”. Opens Instagram; needs
+            internet and may require login. External example, not an inline
             video or a verified layup/pull-up finish.
           </small>
         </div>
